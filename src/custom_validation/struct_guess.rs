@@ -27,6 +27,7 @@ pub struct Guess {
     pub(crate) value: i32,
 }
 
+#[allow(dead_code)]
 impl Guess {
     pub fn new(value: i32) -> Guess {
         if !(1..=100).contains(&value) {
